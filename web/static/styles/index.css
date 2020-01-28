@@ -1,0 +1,111 @@
+.head {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    height: 80px;
+    color: black;
+    text-align: center;
+    background: silver;
+    z-index: 100;
+}
+
+body {
+    min-width: 700px;
+    overflow: paged-x;
+    background-color: silver;
+}
+
+#head-title, #head-author {
+    font-size: 30px;
+    margin-left: 10px;
+    text-align: center;
+}
+
+.main {
+    width: 850px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 80px;
+    font-family: cursive;
+    padding-top: 5px;
+
+}
+
+.main h2 {
+    color: black;
+}
+
+.submit-button, .history-button {
+    margin-top: 20px;
+    border-radius: 10px;
+    border: 2px solid black;
+    background: #d7d7d7;
+    font-family: cursive;
+    height: 50px;
+    width: 150px;
+    font-size: 20px;
+    cursor: pointer;
+    text-decoration: none;
+    transition-duration: 0.4s;
+}
+
+.submit-button:hover, .r-button.pressed, .history-button:hover {
+    background: black;
+    color: white;
+}
+
+.submit-button:hover:disabled {
+    background: #d7d7d7;
+    color: grey;
+}
+
+.main #canvas-div {
+    float: right;
+    margin-right: 150px;
+}
+
+.result-table {
+    border-collapse: collapse;
+    border: solid 4px black;
+    padding: 0;
+    font-size: 20px;
+}
+
+.result-table td, .result-table th {
+    border: solid 2px black;
+    text-align: center;
+}
+
+.result-table th {
+    border-bottom: 4px solid black;
+    padding-left: 2px;
+    padding-right: 4px;
+}
+
+.warn {
+    color: red;
+}
+
+button.r-button {
+    border-radius: 10px;
+    border: 2px solid black;
+    background: #d7d7d7;
+    font-family: cursive;
+    height: 45px;
+    width: 45px;
+    font-size: 20px;
+    cursor: pointer;
+    text-decoration: none;
+    transition-duration: 0.4s;
+}
+
+.history-button {
+    width: 200px;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.change-input {
+    width: 70px;
+}
